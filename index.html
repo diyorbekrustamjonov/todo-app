@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="app">
+        <div class="app-header">
+            <div class="header-inner">
+                <ul>
+                    <li class="active">
+                        <a href="#">Day</a>
+                    </li>
+                    <li>
+                        <a href="#">Week</a>
+                    </li>
+                    <li>
+                        <a href="#">Month</a>
+                    </li>
+                    <li>
+                        <a href="#">Year</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="slider-main">
+                <div class="inner-slider">
+                    <div class="left-arrow">
+                        <button class="btn">
+                            <img src="./img/left-arrow.svg"alt="Left-arrow">
+                        </button>
+                    </div>
+                    <div class="dates">
+                        <h1 class="date-name">
+                            Thursday
+                        </h1>
+                        <span class="full-date">
+                            Dec 8, 2021
+                        </span>
+                    </div>
+                    <div class="right-arrow">
+                        <button class="btn">
+                            <img src="./img/right-arrow.svg"alt="Right-arrow">
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <form action="index.html" method="POST">
+                    <label for="hamburger" class="hamburger">
+                        <img src="./img/hamburger.svg" alt="">
+                    </label>
+                    <input type="text" name="newTodo" class="todo-input" id="hamburger" placeholder="Add a task...">
+                </form>
+            </div>
+            <div class="todos">
+                <div class="inner-todo">
+                    <div class="fixed-todos">
+
+                    </div>
+                    <div class="line"></div>
+                    <div class="new-todos">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,413 @@
+@import "http://fonts.googleapis.com/css?family=Roboto:400,700,300,500";
+
+/* Media start */
+
+@media (min-width: 600px) {
+    .app .app-header ul::before {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .app {
+        width: 500px;
+    }
+    .container {
+        width: 400px;
+    }
+}
+
+@media (min-width: 768px) {
+    .app {
+        width: 500px;
+    }
+    .container {
+        width: 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    .app {
+        width: 500px;
+    }
+    .container {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .app {
+        width: 500px;
+    }
+    .container {
+        width: 400px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    padding-left: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/* Media end */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fall {
+    display: none !important;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background: #0088CC;
+}
+
+a {
+    text-decoration: none;
+    color: #D7DFE7;
+}
+
+ul {
+    list-style: none;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: transparent !important;
+}
+.btn {
+    outline: none;
+    border: none;
+    background: transparent !important;
+    cursor: pointer;
+}
+
+.svg:hover {
+    fill: #fff;
+}
+
+.btn img:hover {
+    fill: #DDDEDF;
+    color: #DDDEDF;
+}
+
+#arrow:hover {
+    fill: #fff;
+}
+
+.line {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 2px;
+    background-color: #363B42;
+}
+
+input[placeholder] {
+    color: #fff;
+}
+
+.btn:hover>img {
+    fill: #0088CC
+}
+
+.app {
+    height: 700px;
+    background-color: #3C424A;
+    border-radius: 24px;
+    margin: 50px auto;
+}
+
+.app .app-header {
+    padding-top: 25px;
+    width: 358px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.app .app-header .header-inner ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.app .app-header {
+    position: relative;
+}
+
+.app .app-header ul li {
+    position: relative;
+}
+
+.app .app-header ul li:hover>a::before {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    width: 100%;
+    height: 2px;
+    background-color: #0088CC;
+    color: #fff !important;
+}
+
+.app .app-header ul li.active::before {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    width: 100%;
+    height: 2px;
+    background-color: #0088CC;
+    color: #fff !important;
+}
+
+.app .app-header ul::before {
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    width: 120%;
+    height: 2px;
+    background-color: #363B42
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.slider-main {
+    margin-top: 70px;
+}
+
+.slider-main .inner-slider {
+    width: 210px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider-main .inner-slider .dates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-main .inner-slider .dates .date-name {
+    color: #D7DFE7;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.slider-main .inner-slider .dates .full-date {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.28);
+}
+
+.form {
+    margin-top: 55px;
+}
+
+.form form .todo-input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #2E3238;
+    background-color: #343A40;
+    padding-left: 40px;
+    outline: none;
+}
+
+.form form {
+    position: relative;
+}
+
+.form form .hamburger {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+}
+
+.form form:hover>input {
+    border: 1px solid white;
+}
+
+.todos {
+    margin-top: 30px;
+    width: 100%;
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden !important;
+
+}
+
+.todos .inner-todo {
+    flex-direction: column;
+    align-items: start;
+}
+
+.todos .inner-todo .todo {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todos .inner-todo .todo .task {
+    display: flex;
+    align-items: start;
+    position: relative;
+}
+
+.todos .inner-todo .todo .task img {
+    position: absolute;
+    left: -20px;
+    width: 15px;
+}
+
+.todos .inner-todo .todo .task .text {
+    font-size: 12px;
+    padding-left: 8px;
+    color: #C5C7C8;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.todos .inner-todo .todo .task .text span {
+    font-style: italic;
+    font-size: 8px !important;
+}
+
+.todos .inner-todo .todo .task input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #2E3238;
+    background: #484F59;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.todos .inner-todo .todo .task input::after {
+    font-family: "Font Awesome 5 Pro";
+    content: "\f00c";
+    font-size: 12px;
+    text-align: center;
+    color: #DDDEDF;
+    display: none;
+}
+
+.todos .inner-todo .todo .task input:checked::after {
+    display: block;
+}
+
+
+/* \f08d */
+
+.todos .inner-todo .todo {
+    position: relative;
+}
+
+.todos .inner-todo .todo .more {
+    position: relative;
+    cursor: pointer;
+}
+
+.todos .inner-todo .todo .more .block {
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    text-align: left;
+    right: -5px;
+    top: 30px;
+    background: #484F59;
+    z-index: 1;
+    color: #8D94A0;
+    padding: 10px;
+    font-size: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    display: none;
+}
+
+.todos .inner-todo .todo .more .block::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #484F59;
+    position: absolute;
+    top: -6px;
+    right: 5px;
+    z-index: -1;
+    background: #484F59;
+    border-radius: 1px;
+    transform: rotate(134.96deg);
+}
+
+.todos .inner-todo .todo .more:hover .block {
+    transition-duration: 3s;
+    transition: all 3s;
+    transition-delay: 3s;
+    display: block;
+}
+
+.todos .inner-todo .todo .more .block ul li {
+    line-height: 15px;
+}
+
+.todos .inner-todo .todo .more .block ul li img {
+    width: 10px;
+}
+
+.todos .inner-todo .todo .more .block ul li button {
+    padding-left: 3px;
+    color: #8D94A0;
+    font-size: 10px;
+}
+
+.todos .inner-todo .todo .task .text input{
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 0px;
+    text-align: left;
+    font-size: 12px;
+    color: #C5C7C8;
+    font-style: normal;
+    font-weight: bolder;
+}
